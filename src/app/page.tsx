@@ -72,7 +72,7 @@ export default function WeddingLanding() {
           <p className="text-gold-500 font-medium mb-6 tracking-widest text-sm">WEDDING PLANNER</p>
 
           <h1 className="text-4xl md:text-6xl font-serif font-bold mb-8 leading-tight text-gray-900">
-            결혼준비의 모든 것,<br />
+            결혼 준비의 모든 것,<br />
             <span className="text-gold-500">한방에.</span>
           </h1>
 
@@ -270,7 +270,7 @@ export default function WeddingLanding() {
       <section className="py-28 bg-white">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gray-900">
-            결혼준비, 쉬워져야 합니다
+            결혼 준비, 쉬워져야 합니다
           </h2>
           <p className="text-gray-500 mb-10 text-lg">
             2026년 4월, 웨딩한방과 함께 시작하세요.
