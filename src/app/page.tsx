@@ -73,7 +73,7 @@ export default function WeddingLanding() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-4">
-            AI 24시간 플래너가 함께합니다
+            24시간 AI 플래너가 함께합니다
           </p>
 
           <p className="text-gray-500 mb-12 max-w-lg mx-auto">
@@ -165,8 +165,8 @@ export default function WeddingLanding() {
                 desc: "숨겨진 비용 없이 모든 추가비용을 미리 확인하세요."
               },
               {
-                title: "AI 24시간 플래너",
-                desc: "밤에도 새벽에도 AI가 즉시 답변. 일정, 예산, 업체 추천까지."
+                title: "24시간 AI 플래너",
+                desc: "밤에도 새벽에도 AI가 즉시 답변해 드립니다."
               },
               {
                 title: "업계 최저가",
