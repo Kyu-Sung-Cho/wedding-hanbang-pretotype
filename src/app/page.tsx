@@ -151,6 +151,9 @@ export default function WeddingLanding() {
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-500 opacity-60 mt-8 text-right">
+            * 한국소비자원 '2024 소비자 시장평가지표', 공정거래위원회 '결혼서비스 실태조사'(2024), 경향신문(2019)
+          </p>
         </div>
       </section>
 
