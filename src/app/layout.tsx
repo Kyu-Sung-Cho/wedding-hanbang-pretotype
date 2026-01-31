@@ -1,12 +1,16 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Noto_Serif_KR } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const notoSerif = Noto_Serif_KR({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-serif'
+})
 
 export const metadata: Metadata = {
   title: '웨딩한방 - 결혼준비의 모든 것, 한방에',
-  description: '투명한 가격, 24시간 상담, 합리적인 수수료. 더 이상 복잡하고 비싼 결혼준비는 그만.',
+  description: 'AI 24시간 플래너와 함께하는 스마트한 결혼준비. 투명한 가격, 업계 최저가.',
 }
 
 export default function RootLayout({
@@ -16,7 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+        />
+      </head>
+      <body className={`${notoSerif.variable} font-sans`}>{children}</body>
     </html>
   )
 }
