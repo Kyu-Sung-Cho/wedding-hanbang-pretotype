@@ -38,9 +38,9 @@ export default function WeddingLanding() {
         body: JSON.stringify({ email }),
       })
 
-      const data = await res.json()
-
       if (!res.ok) {
+        const text = await res.text()
+        const data = text ? JSON.parse(text) : {}
         setError(data.error || '등록 중 오류가 발생했습니다.')
         setLoading(false)
         return
@@ -49,6 +49,7 @@ export default function WeddingLanding() {
       setSubmitted(true)
       setTimeout(() => fetchCount(), 500)
     } catch (err) {
+      console.error('Submit error:', err)
       setError('서버 연결에 실패했습니다.')
     } finally {
       setLoading(false)
