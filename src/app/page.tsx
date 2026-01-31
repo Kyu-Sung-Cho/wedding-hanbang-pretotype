@@ -215,8 +215,8 @@ export default function WeddingLanding() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 ),
-                title: "합리적 수수료",
-                desc: "업계 최저 수준의 수수료로 업체도 고객도 모두 만족할 수 있는 구조를 만들었습니다."
+                title: "워크인보다 저렴",
+                desc: "매장 방문 가격보다 더 저렴하게 이용하세요. 중개 수수료 절감분을 고객에게 돌려드립니다."
               },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
