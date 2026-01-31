@@ -155,7 +155,7 @@ export default function WeddingLanding() {
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-gold-500 font-medium mb-4 tracking-widest text-sm">OUR SOLUTION</p>
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-16 text-gray-900">
-            웨딩한방이 다릅니다
+            웨딩한방은 다릅니다
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
