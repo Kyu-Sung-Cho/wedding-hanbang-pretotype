@@ -65,7 +65,7 @@ export default function WeddingLanding() {
             </div>
             <span className="font-semibold text-slate-800 tracking-tight">웨딩한방</span>
           </div>
-          <div className="text-sm text-slate-500">2025년 4월 출시 예정</div>
+          <div className="text-sm text-slate-500">2026년 4월 출시 예정</div>
         </div>
       </nav>
 
@@ -215,8 +215,8 @@ export default function WeddingLanding() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 ),
-                title: "워크인보다 저렴",
-                desc: "매장 방문 가격보다 더 저렴하게 이용하세요. 중개 수수료 절감분을 고객에게 돌려드립니다."
+                title: "업계 최저가",
+                desc: "높은 중개 수수료 없이 업체와 직접 연결해 드립니다. 같은 서비스, 더 낮은 가격."
               },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
@@ -268,7 +268,7 @@ export default function WeddingLanding() {
             결혼준비, <span className="font-semibold">쉬워져야 합니다</span>
           </h2>
           <p className="text-slate-500 mb-10 text-lg font-light">
-            2025년 4월, 웨딩한방과 함께<br />
+            2026년 4월, 웨딩한방과 함께<br />
             새로운 결혼준비를 경험하세요.
           </p>
 
@@ -314,7 +314,7 @@ export default function WeddingLanding() {
               문의: weddinghanbang@gmail.com
             </div>
             <div className="text-sm text-slate-400">
-              © 2025 웨딩한방. All rights reserved.
+              © 2026 웨딩한방. All rights reserved.
             </div>
           </div>
         </div>
