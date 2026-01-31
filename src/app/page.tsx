@@ -15,7 +15,10 @@ export default function WeddingLanding() {
 
   const fetchCount = async () => {
     try {
-      const res = await fetch('/api/count', { cache: 'no-store' })
+      const res = await fetch(`/api/count?t=${Date.now()}`, {
+        cache: 'no-store',
+        headers: { 'Cache-Control': 'no-cache' }
+      })
       const data = await res.json()
       setCount(data.count)
     } catch (err) {
@@ -44,7 +47,7 @@ export default function WeddingLanding() {
       }
 
       setSubmitted(true)
-      fetchCount()
+      setTimeout(() => fetchCount(), 500)
     } catch (err) {
       setError('서버 연결에 실패했습니다.')
     } finally {
