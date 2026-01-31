@@ -183,40 +183,43 @@ export default function WeddingLanding() {
       </section>
 
       {/* AI Remind Section */}
-      <section className="py-28 bg-gray-50">
+      <section className="py-28 bg-gray-900 text-white">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-gold-500 font-medium mb-4 tracking-widest text-sm">AI REMIND</p>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gray-900">
-            결혼의 처음부터 끝까지,<br />
-            AI가 먼저 알려드립니다
-          </h2>
-          <p className="text-gray-500 mb-12 max-w-2xl text-lg">
-            "지금 이 시점에 뭘 해야하지?" "내가 다 챙겼나?"<br />
-            더 이상 고민하지 마세요. 필요한 타이밍에, 필요한 말로 AI가 먼저 리마인드해 드립니다.
-          </p>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-gold-400 font-medium mb-4 tracking-widest text-sm">YOUR PERSONAL CONCIERGE</p>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 leading-tight">
+                당신의 소중한 순간,<br />
+                하나도 놓치지 않도록
+              </h2>
+              <p className="text-gray-400 mb-8 text-lg leading-relaxed">
+                상견례부터 허니문까지.<br />
+                바쁜 일상 속에서도 완벽한 결혼 준비가 가능하도록,<br />
+                AI가 딱 맞는 타이밍에 다정하게 알려드립니다.
+              </p>
+              <p className="text-gray-500 text-sm italic">
+                "다음 주가 청첩장 발송 적기예요"<br />
+                "스드메 촬영 3일 전, 준비물 챙기셨나요?"
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { title: "상견례", desc: "장소 예약부터 선물 준비까지" },
-              { title: "청첩장", desc: "모바일/실물 청첩장 발송 타이밍" },
-              { title: "예단/예물", desc: "예단 품목 체크리스트 관리" },
-              { title: "스드메", desc: "촬영 일정과 준비물 안내" },
-            ].map((item, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-gold-200 hover:shadow-md transition-all">
-                <div className="w-10 h-10 bg-gold-100 rounded-full flex items-center justify-center mb-4">
-                  <svg className="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                  </svg>
+            <div className="space-y-4">
+              {[
+                { step: "D-180", title: "상견례 · 예식장 투어" },
+                { step: "D-120", title: "스드메 촬영 · 예단 준비" },
+                { step: "D-60", title: "청첩장 발송 · 혼수 준비" },
+                { step: "D-30", title: "최종 점검 · 허니문 준비" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-6 bg-gray-800/50 rounded-xl p-5 border border-gray-700/50">
+                  <span className="text-gold-400 font-mono font-bold text-sm w-16">{item.step}</span>
+                  <span className="text-white">{item.title}</span>
                 </div>
-                <h3 className="text-lg font-bold mb-2 text-gray-900">{item.title}</h3>
-                <p className="text-gray-500 text-sm">{item.desc}</p>
-              </div>
-            ))}
+              ))}
+              <p className="text-gray-500 text-sm text-center pt-4">
+                30개 이상의 웨딩 체크포인트를 자동으로 관리
+              </p>
+            </div>
           </div>
-
-          <p className="text-center text-gray-400 mt-10 text-sm">
-            + 함, 이바지, 폐백, 허니문 등 30개 이상의 웨딩 체크포인트 지원
-          </p>
         </div>
       </section>
 
