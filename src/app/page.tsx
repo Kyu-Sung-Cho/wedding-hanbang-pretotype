@@ -199,16 +199,16 @@ export default function WeddingLanding() {
               </p>
               <p className="text-gray-500 text-sm italic">
                 "다음 주가 청첩장 발송 적기예요"<br />
-                "스드메 촬영 3일 전, 준비물 챙기셨나요?"
+                "스드메 계약 전, 체크리스트 확인하셨나요?"
               </p>
             </div>
 
             <div className="space-y-4">
               {[
-                "상견례 · 예식장 투어",
-                "스드메 촬영 · 예단 준비",
-                "청첩장 발송 · 혼수 준비",
-                "본식 준비 · 최종 점검",
+                "상견례",
+                "스드메 준비",
+                "청첩장 발송",
+                "본식 준비",
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4 bg-gray-800/50 rounded-xl p-5 border border-gray-700/50">
                   <div className="w-2 h-2 bg-gold-400 rounded-full" />
