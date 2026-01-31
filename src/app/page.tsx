@@ -169,8 +169,8 @@ export default function WeddingLanding() {
                 desc: "숨겨진 비용 없이 모든 추가비용을 미리 확인하세요."
               },
               {
-                title: "AI 플래너 24시간",
-                desc: "상담, 일정 관리, 업체 추천까지 AI가 도와드립니다."
+                title: "AI 플래너",
+                desc: "상담, 일정 관리, 업체 추천까지 AI가 24시간 도와드립니다."
               },
               {
                 title: "업계 최저가",
