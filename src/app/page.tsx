@@ -230,7 +230,7 @@ export default function WeddingLanding() {
                   <div className="w-6 h-6 rounded-full border border-gray-600 flex items-center justify-center">
                     <span className="text-gray-500 text-xs">+</span>
                   </div>
-                  <span className="text-gray-500">외 30개 이상의 체크포인트</span>
+                  <span className="text-gray-500">그 외 30개 이상의 체크포인트</span>
                 </div>
               </div>
             </div>
