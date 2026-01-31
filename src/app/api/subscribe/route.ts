@@ -37,12 +37,23 @@ export async function POST(request: Request) {
     }
 
     // 이메일 저장
-    const { error } = await supabase
+    const { data: insertData, error } = await supabase
       .from('subscribers')
       .insert([{ email, created_at: new Date().toISOString() }])
+      .select()
+
+    console.log('Insert result:', { insertData, error, email })
 
     if (error) {
-      console.error('Supabase error:', error)
+      console.error('Supabase insert error:', error)
+      return NextResponse.json(
+        { error: '등록 중 오류가 발생했습니다.' },
+        { status: 500 }
+      )
+    }
+
+    if (!insertData || insertData.length === 0) {
+      console.error('Insert returned no data - possible RLS issue')
       return NextResponse.json(
         { error: '등록 중 오류가 발생했습니다.' },
         { status: 500 }
