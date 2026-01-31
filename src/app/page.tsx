@@ -99,7 +99,8 @@ export default function WeddingLanding() {
                   placeholder="이메일 주소"
                   value={email}
                   onChange={(e) => setEmail(toHalfWidth(e.target.value))}
-                  className="flex-1 px-6 py-4 bg-white border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent text-gray-900 placeholder:text-gray-400 tracking-normal"
+                  style={{ letterSpacing: 'normal', fontFamily: 'Arial, sans-serif' }}
+                  className="flex-1 px-6 py-4 bg-white border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent text-gray-900 placeholder:text-gray-400"
                   required
                   disabled={loading}
                 />
@@ -286,7 +287,8 @@ export default function WeddingLanding() {
                 placeholder="이메일 주소"
                 value={email}
                 onChange={(e) => setEmail(toHalfWidth(e.target.value))}
-                className="flex-1 px-6 py-4 bg-gray-50 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gold-400 text-gray-900 placeholder:text-gray-400 tracking-normal"
+                style={{ letterSpacing: 'normal', fontFamily: 'Arial, sans-serif' }}
+                className="flex-1 px-6 py-4 bg-gray-50 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gold-400 text-gray-900 placeholder:text-gray-400"
                 required
                 disabled={loading}
               />
