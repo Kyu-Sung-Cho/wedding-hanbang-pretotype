@@ -73,7 +73,7 @@ export default function WeddingLanding() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-4">
-            24시간 AI 플래너가 함께합니다
+            AI 플래너가 24시간 함께합니다
           </p>
 
           <p className="text-gray-500 mb-12 max-w-lg mx-auto">
