@@ -203,22 +203,21 @@ export default function WeddingLanding() {
               </p>
             </div>
 
-            <div className="bg-gray-800/30 rounded-2xl p-8 border border-gray-700/30">
-              <div className="grid grid-cols-3 gap-4">
-                {[
-                  "상견례", "예식장", "스드메",
-                  "청첩장", "예단", "예물",
-                  "혼수", "함", "폐백",
-                ].map((item, i) => (
-                  <div key={i} className="text-center py-3">
-                    <span className="text-white/90 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="border-t border-gray-700/50 mt-6 pt-6 text-center">
-                <p className="text-gold-400 text-sm">
-                  외 30개 이상의 체크포인트
-                </p>
+            <div className="space-y-3">
+              {[
+                "상견례", "예식장", "스드메", "청첩장", "예단", "예물", "혼수"
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-4 group"
+                >
+                  <div className="w-8 h-[1px] bg-gold-400/60 group-hover:w-12 transition-all" />
+                  <span className="text-white/90 group-hover:text-gold-400 transition-colors">{item}</span>
+                </div>
+              ))}
+              <div className="flex items-center gap-4 pt-4">
+                <div className="w-8 h-[1px] bg-gray-600" />
+                <span className="text-gray-500 text-sm">외 30개 이상</span>
               </div>
             </div>
           </div>
