@@ -91,8 +91,12 @@ export default function WeddingLanding() {
             <span className="font-semibold">한방에.</span>
           </h1>
 
+          <p className="text-xl md:text-2xl text-slate-700 mb-4 font-medium">
+            AI 24시간 플래너가 함께합니다
+          </p>
+
           <p className="text-lg md:text-xl text-slate-500 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            투명한 가격, 24시간 상담, 합리적인 수수료.<br />
+            투명한 가격, 업계 최저가, 언제든 상담 가능.<br />
             더 이상 복잡하고 비싼 결혼준비는 그만.
           </p>
 
@@ -206,8 +210,8 @@ export default function WeddingLanding() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
                 ),
-                title: "24시간 상담",
-                desc: "밤에도 새벽에도 궁금한 것이 생기면 바로 물어보세요. 언제든 답변을 받을 수 있습니다."
+                title: "AI 24시간 플래너",
+                desc: "밤에도 새벽에도 AI 플래너가 즉시 답변해 드립니다. 결혼 준비 일정, 예산, 업체 추천까지."
               },
               {
                 icon: (
