@@ -58,18 +58,18 @@ export default function WeddingLanding() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <span className="text-xl font-serif font-bold text-gray-900">웨딩한방</span>
-          <span className="text-sm text-gold-500 font-medium">2026년 4월 출시</span>
+          <span className="text-sm text-amber-600 font-medium">2026년 4월 출시</span>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-b from-gold-50 to-white">
+      <section className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-b from-amber-50 to-white">
         <div className="max-w-3xl mx-auto text-center pt-20">
-          <p className="text-gold-500 font-medium mb-6 tracking-widest text-sm">WEDDING PLANNER</p>
+          <p className="text-amber-600 font-medium mb-6 tracking-widest text-sm">WEDDING PLANNER</p>
 
           <h1 className="text-4xl md:text-6xl font-serif font-bold mb-8 leading-tight text-gray-900">
             결혼준비의 모든 것,<br />
-            <span className="text-gold-500">한방에.</span>
+            <span className="text-amber-600">한방에.</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-4">
@@ -89,7 +89,7 @@ export default function WeddingLanding() {
                   placeholder="이메일 주소"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 px-6 py-4 bg-white border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent text-gray-900 placeholder:text-gray-400"
+                  className="flex-1 px-6 py-4 bg-white border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-gray-900 placeholder:text-gray-400"
                   required
                   disabled={loading}
                 />
@@ -109,8 +109,8 @@ export default function WeddingLanding() {
               </p>
             </div>
           ) : (
-            <div className="max-w-md mx-auto bg-white rounded-3xl p-10 shadow-lg border border-gold-100">
-              <div className="w-16 h-16 bg-gold-400 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="max-w-md mx-auto bg-white rounded-3xl p-10 shadow-lg border border-amber-100">
+              <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
@@ -128,7 +128,7 @@ export default function WeddingLanding() {
       {/* Stats Section */}
       <section className="py-28 bg-gray-900 text-white">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-gold-400 font-medium mb-4 tracking-widest text-sm">THE PROBLEM</p>
+          <p className="text-amber-500 font-medium mb-4 tracking-widest text-sm">THE PROBLEM</p>
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-16 max-w-xl leading-tight">
             결혼서비스 만족도,<br />
             40개 업종 중 최하위
@@ -142,7 +142,7 @@ export default function WeddingLanding() {
               { num: "83%", label: "추가비용 경험" },
             ].map((stat, i) => (
               <div key={i} className="border-t border-gray-700 pt-6">
-                <div className="text-4xl md:text-5xl font-bold text-gold-400 mb-2">{stat.num}</div>
+                <div className="text-4xl md:text-5xl font-bold text-amber-500 mb-2">{stat.num}</div>
                 <div className="text-gray-400">{stat.label}</div>
               </div>
             ))}
@@ -153,7 +153,7 @@ export default function WeddingLanding() {
       {/* Features Section */}
       <section className="py-28 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-gold-500 font-medium mb-4 tracking-widest text-sm">OUR SOLUTION</p>
+          <p className="text-amber-600 font-medium mb-4 tracking-widest text-sm">OUR SOLUTION</p>
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-16 text-gray-900">
             웨딩한방이 다릅니다
           </h2>
@@ -173,7 +173,7 @@ export default function WeddingLanding() {
                 desc: "높은 중개 수수료 없이 업체와 직접 연결해 드립니다."
               },
             ].map((item, i) => (
-              <div key={i} className="bg-gold-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+              <div key={i} className="bg-amber-50 rounded-2xl p-8 border border-amber-100 shadow-sm hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold mb-4 text-gray-900">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
@@ -183,11 +183,11 @@ export default function WeddingLanding() {
       </section>
 
       {/* Early Bird Section */}
-      <section className="py-28 bg-gold-50">
+      <section className="py-28 bg-amber-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-gold-600 font-medium mb-4 tracking-widest text-sm">EARLY BIRD</p>
+              <p className="text-amber-700 font-medium mb-4 tracking-widest text-sm">EARLY BIRD</p>
               <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 leading-tight text-gray-900">
                 지금 등록하시면<br />
                 특별한 혜택을 드립니다
@@ -201,7 +201,7 @@ export default function WeddingLanding() {
                 "웨딩 체크리스트 제공",
               ].map((benefit, i) => (
                 <div key={i} className="flex items-center gap-4 text-lg">
-                  <div className="w-2 h-2 bg-gold-500 rounded-full" />
+                  <div className="w-2 h-2 bg-amber-500 rounded-full" />
                   <span className="text-gray-700">{benefit}</span>
                 </div>
               ))}
@@ -227,7 +227,7 @@ export default function WeddingLanding() {
                 placeholder="이메일 주소"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-6 py-4 bg-gray-50 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gold-400 text-gray-900 placeholder:text-gray-400"
+                className="flex-1 px-6 py-4 bg-gray-50 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-amber-500 text-gray-900 placeholder:text-gray-400"
                 required
                 disabled={loading}
               />
