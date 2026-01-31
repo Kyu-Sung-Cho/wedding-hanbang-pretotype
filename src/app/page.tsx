@@ -251,7 +251,7 @@ export default function WeddingLanding() {
               <div className="flex flex-col gap-4">
                 {[
                   { icon: "✦", text: "프리미엄 기능 3개월 무료" },
-                  { icon: "✦", text: "얼리버드 전용 업체 특가" },
+                  { icon: "✦", text: "얼리버드 전용 추가 할인" },
                 ].map((benefit, i) => (
                   <div key={i} className="flex items-center gap-3 text-white">
                     <span className="text-amber-400">{benefit.icon}</span>
