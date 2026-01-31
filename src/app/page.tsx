@@ -134,7 +134,7 @@ export default function WeddingLanding() {
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-gold-400 font-medium mb-4 tracking-widest text-sm">THE PROBLEM</p>
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-16 max-w-xl leading-tight">
-            결혼서비스 만족도,<br />
+            결혼 서비스 만족도,<br />
             40개 업종 중 최하위
           </h2>
 
@@ -202,7 +202,7 @@ export default function WeddingLanding() {
               <p className="text-gray-400 mb-8 text-lg leading-relaxed">
                 상견례부터 본식까지.<br />
                 바쁜 일상 속에서도 완벽한 결혼 준비가 가능하도록,<br />
-                AI가 딱 맞는 타이밍에 먼저 알려드립니다.
+                AI 플래너가 딱 맞는 타이밍에 먼저 알려드립니다.
               </p>
               <p className="text-gray-500 text-sm italic">
                 "다음 주가 청첩장 발송 적기예요"<br />
