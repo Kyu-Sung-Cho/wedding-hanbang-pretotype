@@ -311,7 +311,7 @@ export default function WeddingLanding() {
               <span className="font-medium text-slate-700">웨딩한방</span>
             </div>
             <div className="text-sm text-slate-400">
-              문의: contact@weddinghanban.com
+              문의: weddinghanbang@gmail.com
             </div>
             <div className="text-sm text-slate-400">
               © 2025 웨딩한방. All rights reserved.
