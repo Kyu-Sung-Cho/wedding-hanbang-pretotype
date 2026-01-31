@@ -15,7 +15,7 @@ export default function WeddingLanding() {
 
   const fetchCount = async () => {
     try {
-      const res = await fetch('/api/count')
+      const res = await fetch('/api/count', { cache: 'no-store' })
       const data = await res.json()
       setCount(data.count)
     } catch (err) {
