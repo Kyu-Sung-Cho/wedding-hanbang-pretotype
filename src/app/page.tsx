@@ -203,21 +203,28 @@ export default function WeddingLanding() {
               </p>
             </div>
 
-            <div className="space-y-3">
-              {[
-                "상견례", "예식장", "스드메", "청첩장", "예단", "예물", "혼수"
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-4 group"
-                >
-                  <div className="w-8 h-[1px] bg-gold-400/60 group-hover:w-12 transition-all" />
-                  <span className="text-white/90 group-hover:text-gold-400 transition-colors">{item}</span>
+            <div className="relative">
+              <div className="absolute left-4 top-0 bottom-0 w-[1px] bg-gradient-to-b from-gold-400/80 via-gold-400/40 to-transparent" />
+              <div className="space-y-0">
+                {[
+                  "상견례", "예식장", "스드메", "청첩장", "예단", "예물", "혼수"
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-6 py-3 group"
+                  >
+                    <div className="w-8 h-8 rounded-full border border-gold-400/50 flex items-center justify-center bg-gray-900 z-10 group-hover:bg-gold-400/20 transition-colors">
+                      <span className="text-gold-400 text-xs font-medium">{String(i + 1).padStart(2, '0')}</span>
+                    </div>
+                    <span className="text-white text-lg group-hover:text-gold-400 transition-colors">{item}</span>
+                  </div>
+                ))}
+                <div className="flex items-center gap-6 py-3 pl-1">
+                  <div className="w-6 h-6 rounded-full border border-gray-600 flex items-center justify-center">
+                    <span className="text-gray-500 text-xs">+</span>
+                  </div>
+                  <span className="text-gray-500">외 30개 이상의 체크포인트</span>
                 </div>
-              ))}
-              <div className="flex items-center gap-4 pt-4">
-                <div className="w-8 h-[1px] bg-gray-600" />
-                <span className="text-gray-500 text-sm">외 30개 이상</span>
               </div>
             </div>
           </div>
