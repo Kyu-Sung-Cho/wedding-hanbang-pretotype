@@ -174,7 +174,7 @@ export default function WeddingLanding() {
               },
               {
                 title: "업계 최저가",
-                desc: "높은 중개 수수료 없이 업체와 직접 연결해 드립니다."
+                desc: "높은 수수료 없이 더 합리적인 가격으로 업체와 연결해드립니다."
               },
             ].map((item, i) => (
               <div key={i} className="bg-gold-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
