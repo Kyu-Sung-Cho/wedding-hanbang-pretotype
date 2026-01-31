@@ -166,7 +166,7 @@ export default function WeddingLanding() {
               },
               {
                 title: "AI 플래너 24시간",
-                desc: "밤에도 새벽에도 AI가 즉시 답변해 드립니다."
+                desc: "상담, 일정 관리, 업체 추천까지 AI가 도와드립니다."
               },
               {
                 title: "업계 최저가",
