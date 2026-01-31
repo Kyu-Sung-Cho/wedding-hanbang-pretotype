@@ -195,7 +195,7 @@ export default function WeddingLanding() {
               <p className="text-gray-400 mb-8 text-lg leading-relaxed">
                 상견례부터 본식까지.<br />
                 바쁜 일상 속에서도 완벽한 결혼 준비가 가능하도록,<br />
-                AI가 딱 맞는 타이밍에 다정하게 알려드립니다.
+                AI가 딱 맞는 타이밍에 먼저 알려드립니다.
               </p>
               <p className="text-gray-500 text-sm italic">
                 "다음 주가 청첩장 발송 적기예요"<br />
