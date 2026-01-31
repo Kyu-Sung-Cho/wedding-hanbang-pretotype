@@ -65,24 +65,32 @@ export async function POST(request: Request) {
       await resend.emails.send({
         from: '웨딩한방 <onboarding@resend.dev>',
         to: email,
-        subject: '웨딩한방 사전등록이 완료되었습니다',
+        subject: '웨딩한방 얼리버드 등록 완료!',
         html: `
           <div style="font-family: 'Apple SD Gothic Neo', sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
-            <h1 style="font-size: 24px; color: #1a1a1a; margin-bottom: 20px;">사전등록이 완료되었습니다</h1>
-            <p style="font-size: 16px; color: #666; line-height: 1.6; margin-bottom: 30px;">
-              웨딩한방에 관심을 가져주셔서 감사합니다.<br/>
-              2026년 4월 출시되면 가장 먼저 알려드릴게요.
+            <h1 style="color: #1e293b; font-size: 24px; margin-bottom: 20px;">환영합니다!</h1>
+
+            <p style="color: #475569; font-size: 16px; line-height: 1.6;">
+              웨딩한방 얼리버드에 등록해주셔서 감사합니다.
             </p>
-            <div style="background: #f9f7f3; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
-              <p style="font-size: 14px; color: #888; margin: 0;">얼리버드 혜택</p>
-              <ul style="font-size: 15px; color: #333; margin: 10px 0 0 0; padding-left: 20px;">
-                <li>프리미엄 기능 3개월 무료</li>
-                <li>얼리버드 전용 추가 할인</li>
-                <li>웨딩 체크리스트 제공</li>
+
+            <p style="color: #475569; font-size: 16px; line-height: 1.6;">
+              서비스 출시 시 <strong>가장 먼저</strong> 알려드릴게요.<br/>
+              얼리버드만을 위한 특별한 혜택도 준비하고 있으니 기대해주세요!
+            </p>
+
+            <div style="background: linear-gradient(135deg, #d4af37 0%, #f4e4bc 100%); padding: 20px; border-radius: 8px; margin: 30px 0;">
+              <p style="color: #1e293b; font-size: 14px; margin: 0; font-weight: bold;">
+                얼리버드 혜택 예정
+              </p>
+              <ul style="color: #1e293b; font-size: 14px; margin: 10px 0 0 0; padding-left: 20px;">
+                <li>출시 전 베타 테스트 우선 초대</li>
+                <li>정식 출시 후 프리미엄 기능 무료 이용</li>
               </ul>
             </div>
-            <p style="font-size: 14px; color: #999;">
-              문의: weddinghanbang@gmail.com
+
+            <p style="color: #94a3b8; font-size: 14px; margin-top: 40px;">
+              - 웨딩한방 팀 드림
             </p>
           </div>
         `,
