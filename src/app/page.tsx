@@ -193,7 +193,7 @@ export default function WeddingLanding() {
                 하나도 놓치지 않도록
               </h2>
               <p className="text-gray-400 mb-8 text-lg leading-relaxed">
-                상견례부터 허니문까지.<br />
+                상견례부터 본식까지.<br />
                 바쁜 일상 속에서도 완벽한 결혼 준비가 가능하도록,<br />
                 AI가 딱 맞는 타이밍에 다정하게 알려드립니다.
               </p>
@@ -205,14 +205,14 @@ export default function WeddingLanding() {
 
             <div className="space-y-4">
               {[
-                { step: "D-180", title: "상견례 · 예식장 투어" },
-                { step: "D-120", title: "스드메 촬영 · 예단 준비" },
-                { step: "D-60", title: "청첩장 발송 · 혼수 준비" },
-                { step: "D-30", title: "최종 점검 · 허니문 준비" },
+                "상견례 · 예식장 투어",
+                "스드메 촬영 · 예단 준비",
+                "청첩장 발송 · 혼수 준비",
+                "본식 준비 · 최종 점검",
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-6 bg-gray-800/50 rounded-xl p-5 border border-gray-700/50">
-                  <span className="text-gold-400 font-mono font-bold text-sm w-16">{item.step}</span>
-                  <span className="text-white">{item.title}</span>
+                <div key={i} className="flex items-center gap-4 bg-gray-800/50 rounded-xl p-5 border border-gray-700/50">
+                  <div className="w-2 h-2 bg-gold-400 rounded-full" />
+                  <span className="text-white">{item}</span>
                 </div>
               ))}
               <p className="text-gray-500 text-sm text-center pt-4">
