@@ -2,13 +2,6 @@
 
 import { useState, useEffect } from 'react'
 
-// 전각 문자를 반각 문자로 변환
-const toHalfWidth = (str: string) => {
-  return str.replace(/[\uff01-\uff5e]/g, (ch) =>
-    String.fromCharCode(ch.charCodeAt(0) - 0xfee0)
-  ).replace(/\u3000/g, ' ')
-}
-
 export default function WeddingLanding() {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
@@ -98,7 +91,7 @@ export default function WeddingLanding() {
                   type="email"
                   placeholder="이메일 주소"
                   value={email}
-                  onChange={(e) => setEmail(toHalfWidth(e.target.value))}
+                  onChange={(e) => setEmail(e.target.value)}
                   style={{ letterSpacing: 'normal', fontFamily: 'Arial, sans-serif' }}
                   className="flex-1 px-6 py-4 bg-white border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent text-gray-900 placeholder:text-gray-400"
                   required
@@ -286,7 +279,7 @@ export default function WeddingLanding() {
                 type="email"
                 placeholder="이메일 주소"
                 value={email}
-                onChange={(e) => setEmail(toHalfWidth(e.target.value))}
+                onChange={(e) => setEmail(e.target.value)}
                 style={{ letterSpacing: 'normal', fontFamily: 'Arial, sans-serif' }}
                 className="flex-1 px-6 py-4 bg-gray-50 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-gold-400 text-gray-900 placeholder:text-gray-400"
                 required
