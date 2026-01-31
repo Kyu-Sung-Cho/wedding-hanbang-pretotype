@@ -252,7 +252,7 @@ export default function WeddingLanding() {
                 {[
                   { icon: "✦", text: "첫 매칭 수수료 0원" },
                   { icon: "✦", text: "프리미엄 기능 3개월 무료" },
-                  { icon: "✦", text: "선착순 500명 추가 혜택" },
+                  { icon: "✦", text: "선착순 추가 혜택" },
                 ].map((benefit, i) => (
                   <div key={i} className="flex items-center gap-3 text-white">
                     <span className="text-amber-400">{benefit.icon}</span>
